@@ -34,7 +34,7 @@ public class Main{
 			listaSalarios[i] = salarioActual;
 			//le agregamos 10% al salario anterior para crear el siguiente y los guardamos en un array 
 			salarioActual += salarioActual * 0.1;
-			System.out.printf("Salario empleado %s: %.2f\n", i+1, listaSalarios[i]);
+			System.out.printf("Salario básico empleado %s: %.2f\n", i+1, listaSalarios[i]);
 		}
 		return listaSalarios;
 	}
@@ -58,7 +58,7 @@ public class Main{
 			System.out.println();
 			//imprimimos total a pagar
 			double aPagarEmpleado = listaTemporal[0]+listaTemporal[1]+listaTemporal[2]+listaTemporal[3];
-			System.out.print("El total a pagar para el empleado " + (i+1) + " es: " + aPagarEmpleado);
+			System.out.printf("El total a pagar para el empleado %o es: %.2f", i+1, aPagarEmpleado);
 			System.out.println();
 		}
 		System.out.println();
