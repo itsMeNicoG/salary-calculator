@@ -2,7 +2,7 @@ import java.util.*;
 
 /* Author: 
  * Sergio Quintero 
- * 
+ * Nicolás Góngora
  */
 
 public class Main{
