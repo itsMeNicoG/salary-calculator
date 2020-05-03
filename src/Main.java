@@ -1,8 +1,10 @@
 import java.util.*;
 
-/* Author: 
- * Sergio Quintero 
+/* @Authors: 
+ * 
  * Nicolás Góngora
+ * Sergio Quintero 
+ * 
  */
 
 public class Main{
@@ -43,6 +45,7 @@ public class Main{
 					System.out.println("caracter no valido");
 					valido = false; 
 				}
+				//volvemos a solicitar los datos mientras estos no sean validos
 			} while(!valido);
 		   
 			
@@ -54,15 +57,15 @@ public class Main{
 			//la función anterior regresa una matriz con los siguientes datos [[salario1, salud1, pension1, retefuente1],[salario2, salud2, pension2,... 
 			//usamos la matriz retornada para llamar a la función que imprime todos los datos
 			mostrarDatos(salariosConDescuentos);
-			System.out.println("Desea continuar (Si/No)");
+			System.out.println("Desea continuar (si/no)");
 			deseaReiniciar = entrada.next();
-			System.out.println(deseaReiniciar);
-			if(deseaReiniciar.equals("Si")) {
+			if(deseaReiniciar.equals("si")) {
 				reiniciar = true; 
 			} else {
 				reiniciar = false; 
 				System.out.println("Programa finalizado");
 			}
+			//reiniciamos el programa si el cliente lo desea
 		} while (reiniciar);
 	}
 	
